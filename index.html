@@ -3,81 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>vitsorg</title>
-<meta name="description" content="Projects by vitsorg.">
+<title>Vit&rsquo;s Org</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>&#9679;</text></svg>">
 <style>
-  :root {
-    --bg: #ffffff; --surface: #f6f7f9; --line: #d8dbe0;
-    --fg: #16181d; --muted: #5b6069; --accent: #2f6fd0;
-  }
+  :root { --bg: #ffffff; --fg: #16181d; }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16181b; --surface: #1e2125; --line: #31353b;
-      --fg: #e6e8ec; --muted: #9aa0a6; --accent: #6aa6f0;
-    }
+    :root { --bg: #16181b; --fg: #e6e8ec; }
   }
-  * { box-sizing: border-box; }
+  html, body { height: 100%; }
   body {
     margin: 0; background: var(--bg); color: var(--fg);
-    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    display: flex; align-items: center; justify-content: center;
+    font: 600 clamp(2rem, 9vw, 4rem)/1.2 -apple-system, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    letter-spacing: -.02em; -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
-  header { padding: 88px 0 28px; }
-  h1 { font-size: 2.3rem; margin: 0 0 .25em; letter-spacing: -.02em; }
-  .tagline { color: var(--muted); font-size: 1.12rem; margin: 0; }
-  h2 {
-    font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
-    color: var(--muted); margin: 48px 0 14px; font-weight: 700;
-  }
-  a.card {
-    display: block; text-decoration: none; color: inherit;
-    border: 1px solid var(--line); background: var(--surface);
-    border-radius: 10px; padding: 18px 20px; margin-bottom: 14px;
-  }
-  a.card:hover { border-color: var(--accent); }
-  a.card .name { font-weight: 700; font-size: 1.08rem; }
-  a.card .desc { color: var(--muted); margin-top: 4px; }
-  a.card .meta { color: var(--muted); font-size: .84rem; margin-top: 10px; }
-  .dot {
-    display: inline-block; width: 9px; height: 9px; border-radius: 50%;
-    background: #3572A5; margin-right: 6px; vertical-align: baseline;
-  }
-  footer {
-    margin-top: 56px; padding: 24px 0 64px; border-top: 1px solid var(--line);
-    color: var(--muted); font-size: .9rem;
-  }
-  a { color: var(--accent); }
 </style>
 </head>
-<body>
-<div class="wrap">
-
-<header>
-  <h1>vitsorg</h1>
-  <p class="tagline">Tools I build for running multiworld randomizers.</p>
-</header>
-
-<h2>Projects</h2>
-
-<a class="card" href="https://vitsorg.github.io/APLobbyGen/">
-  <div class="name">APLobbyGen</div>
-  <div class="desc">
-    A local-first Archipelago multiworld generator and local server host for
-    Windows. The roster lives on your machine, generation never touches the
-    network, and the seed can be hosted right there. Standard library only.
-  </div>
-  <div class="meta"><span class="dot"></span>Python &middot; source-available</div>
-</a>
-
-<h2>Elsewhere</h2>
-<p><a href="https://github.com/vitsorg">github.com/vitsorg</a></p>
-
-<footer>
-  <p>Built and served from GitHub Pages.</p>
-</footer>
-
-</div>
-</body>
+<body>Vit&rsquo;s Org</body>
 </html>
